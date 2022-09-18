@@ -1,3 +1,10 @@
+"""
+This code introduces the Abstract Class 
+ABC is a skeleton Class where children classes inherits from. 
+All instantiation should come from the children class and not from the ABC Class.
+ABC and @abstarcmethod decorator enforces the abstractions
+"""
+
 from abc import ABC, abstractmethod
 
 class Animal(ABC):

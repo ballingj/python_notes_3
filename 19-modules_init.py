@@ -11,6 +11,15 @@ Dividing up modules into separate files and in own directories:
 #     aloha.py
 #     adios.py
 
+# __init__.py
+# just an empty init file in the main directory
+
+# main.py:
+from greetings import say_hi, say_goodbye
+
+say_hi()
+say_goodbye()
+
 
 # greetings/__init__.py:
 
@@ -18,9 +27,16 @@ from .adios import say_goodbye
 from .aloha import say_hi
 
 
-# main.py:
-from greetings import say_hi, say_goodbye
+# greetings/adios.py:
 
-say_hi()
-say_goodbye()
+def say_hi():
+    print('hello')
+    
+
+# greetings/adios.py:
+
+def say_goodbye():
+    print('good bye')
+
+
 """
