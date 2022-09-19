@@ -1,4 +1,18 @@
 # How to create a requirement.txt to repeat a common PIP
+> Ref: https://docs.python.org/3/library/venv.html
+> Ref: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment
+
+## Find which python is installed and where
+which python
+
+## Install venv
+> venv is included in the Python standard library and requires no additional installation.
+
+## Then create a new virtual environment called venv and activate it:
+> Add an -m flag to specify what version of Python runtime
+> Common name for the target directory is ./venv)
+python3 -m venv /path/to/new/virtual/environment
+
 
 ## Activate a new virtaul environment and install PIP
 source venv/bin/activate
