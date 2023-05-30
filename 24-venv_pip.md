@@ -7,6 +7,7 @@ which python
 
 ## Install venv
 > venv is included in the Python standard library and requires no additional installation.
+python -m venv venv
 
 ## Then create a new virtual environment called venv and activate it:
 > Add an -m flag to specify what version of Python runtime
